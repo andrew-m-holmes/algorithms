@@ -1,7 +1,7 @@
 from typing import Dict, List, Optional
 
 
-def last_visited(graph: Dict[str, List[str]]) -> Optional[str]:
+def lastvisited(graph: Dict[str, List[str]]) -> Optional[str]:
     last = None
 
     def dfs(node: str, visit: set):
@@ -32,7 +32,7 @@ def main():
         "G": ["E"],
     }
 
-    last_node = last_visited(graph)
+    last_node = lastvisited(graph)
     print(last_node)
 
 
