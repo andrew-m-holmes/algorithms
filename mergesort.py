@@ -6,7 +6,7 @@ def mergesort(arr: List[int]) -> List[int]:
 
     def sort(arr: List[int], start: int, end: int):
         if end - start < 1:
-            return 
+            return
         middle = (start + end) // 2
         sort(arr, start, middle)
         sort(arr, middle + 1, end)
